@@ -3,6 +3,12 @@
 extern crate diesel;
 extern crate dotenv;
 
+#[macro_use]
+extern crate serde_derive;
+extern crate serde_json;
+extern crate gotham;
+extern crate hyper;
+
 pub mod clients;
 pub mod schema;
 
