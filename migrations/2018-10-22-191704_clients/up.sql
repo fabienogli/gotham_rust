@@ -1,0 +1,7 @@
+-- Your SQL goes here
+
+CREATE TABLE clients (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY ,
+  name VARCHAR(20) NOT NULL,
+  email VARCHAR(20) NOT NULL
+);
