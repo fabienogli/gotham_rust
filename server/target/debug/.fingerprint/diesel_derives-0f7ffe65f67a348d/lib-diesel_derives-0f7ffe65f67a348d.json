@@ -1,0 +1,1 @@
+{"rustc":85820353143328879,"features":"[\"default\", \"mysql\"]","target":2614620619915435675,"profile":11870183705523825133,"path":10675254715381420408,"deps":[["proc-macro2 v0.3.8","proc_macro2",9657324658855884012],["quote v0.5.2","quote",6029139088504820923],["syn v0.13.11","syn",1705165701116412054]],"local":[{"Precalculated":"1.3.0"}],"rustflags":[],"edition":"Edition2015"}

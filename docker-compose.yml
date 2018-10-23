@@ -3,7 +3,7 @@ version: '3.3'
 services:
   backend:
     build:
-      context: .
+      context: ./server
       dockerfile: Dockerfile
     depends_on:
         - db
@@ -12,8 +12,8 @@ services:
     ports:
       - "8000:8000"
     volumes:
-    - ./src:/server/src
-    env_file: .env
+    - ./server/src:/server/src
+    env_file: ./server/.env
     networks:
         - app
   db:

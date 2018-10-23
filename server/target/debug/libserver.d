@@ -1,0 +1,1 @@
+/home/fabien/test/rust/gotham/server/target/debug/libserver.rlib: /home/fabien/test/rust/gotham/server/src/clients.rs /home/fabien/test/rust/gotham/server/src/lib.rs /home/fabien/test/rust/gotham/server/src/schema.rs
