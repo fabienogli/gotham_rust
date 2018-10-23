@@ -1,0 +1,36 @@
+version: '3.3'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+        - db
+    links:
+        - db
+    ports:
+      - 8000:7878
+    volumes:
+    - .:/usr/src/app
+    env_file: .env
+    networks:
+        - app
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    container_name: "db"
+    networks:
+        - app
+    environment:
+      MYSQL_DATABASE: server
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_USER: root
+      MYSQL_PASSWORD: secret
+
+networks:
+  app:
+      driver: bridge
+#Todo :
+#Configure Node in docker
