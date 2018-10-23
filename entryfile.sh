@@ -1,7 +1,6 @@
 #!/bin/sh
-echo rustup --version
+echo "runing migrations"
 diesel setup
-diesel migration run
 
 echo "launching application"
 cargo run
